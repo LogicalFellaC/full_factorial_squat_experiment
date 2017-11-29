@@ -76,7 +76,11 @@ A side-view video was recorded for each of the data points and by using a bar-tr
 
 An example of a measurement:
 
-![](figures/figure_1.png)
+``` r
+knitr::include_graphics("figures/figure_1.png")
+```
+
+<img src="figures/figure_1.png" width="100%" />
 
 Note: The left snapshot shows the bottom of the lift, while on the right, the top of the lift is reached. Time is measured between the two.
 
@@ -297,7 +301,7 @@ effects_se %>%
   coord_cartesian(ylim = c(-.03, .1))
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-6-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-7-1.png" width="100%" />
 
 #### Approach 2
 
@@ -321,7 +325,7 @@ effects_se %>%
   coord_cartesian(ylim = c(-.03, .1))
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-7-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-8-1.png" width="100%" />
 
 However, to get the labels for the points and be able to highlight the outliers, we need to back out the theoretical normal quantiles from `stat_qq` and append them to `effects_se`.
 
@@ -397,7 +401,7 @@ effects_se %>%
   coord_cartesian(ylim = c(-.03, .1))
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-11-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-12-1.png" width="100%" />
 
 #### Interpretation
 
@@ -459,7 +463,7 @@ Two-way interaction plots.
 create_two_way(experiment_grid, "jump", "rest", "bar_time")
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-13-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-14-1.png" width="100%" />
 
 There is no evidence of interaction between `jump` and `rest`.
 
@@ -469,7 +473,7 @@ Taking smaller `jump`s is better regardless of the `rest` period, and taking sho
 create_two_way(experiment_grid, "reps", "jump", "bar_time")
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-14-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-15-1.png" width="100%" />
 
 There is evidence of interaction between `reps` and `jump`.
 
@@ -479,7 +483,7 @@ Smaller number of `reps` is better, especially when taking a higher `jump` in th
 create_two_way(experiment_grid, "rest", "reps", "bar_time")
 ```
 
-<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-15-1.png" width="100%" />
+<img src="squat_experiment_files/figure-markdown_github/unnamed-chunk-16-1.png" width="100%" />
 
 There is evidence of interaction between `rest` and `reps`.
 

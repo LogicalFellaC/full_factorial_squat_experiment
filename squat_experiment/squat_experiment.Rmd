@@ -96,7 +96,10 @@ measured.
 
 An example of a measurement:
 
-![](figures/figure_1.png)
+```{r}
+knitr::include_graphics("figures/figure_1.png")
+```
+
 
 Note:
 The left snapshot shows the bottom of the lift, while on the right, the top of
