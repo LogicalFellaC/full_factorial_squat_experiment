@@ -76,7 +76,7 @@ A side-view video was recorded for each of the data points and by using a bar-tr
 
 An example of a measurement:
 
-![](figures/figure%201.png)
+![](figures/figure_1.png)
 
 Note: The left snapshot shows the bottom of the lift, while on the right, the top of the lift is reached. Time is measured between the two.
 
