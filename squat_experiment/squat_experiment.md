@@ -77,10 +77,10 @@ A side-view video was recorded for each of the data points and by using a bar-tr
 An example of a measurement:
 
 ``` r
-knitr::include_graphics("figures/figure_1.png", dpi = 100)
+knitr::include_graphics("figures/figure_1.jpg")
 ```
 
-<img src="figures/figure_1.png" width="100%" />
+<img src="figures/figure_1.jpg" width="100%" />
 
 Note: The left snapshot shows the bottom of the lift, while on the right, the top of the lift is reached. Time is measured between the two.
 
