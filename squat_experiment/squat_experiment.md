@@ -77,7 +77,7 @@ A side-view video was recorded for each of the data points and by using a bar-tr
 An example of a measurement:
 
 ``` r
-knitr::include_graphics("figures/figure_1.png")
+knitr::include_graphics("figures/figure_1.png", dpi = 100)
 ```
 
 <img src="figures/figure_1.png" width="100%" />

@@ -97,7 +97,7 @@ measured.
 An example of a measurement:
 
 ```{r}
-knitr::include_graphics("figures/figure_1.png")
+knitr::include_graphics("figures/figure_1.png", dpi = 100)
 ```
 
 
