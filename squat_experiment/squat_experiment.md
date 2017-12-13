@@ -27,7 +27,6 @@ library(broom)
 library(knitr)
 library(purrr)
 library(ggrepel)
-library(stringr)
 library(rlang)
 library(lazyeval)
 library(glue)
@@ -53,7 +52,7 @@ Design
 
 Experiment was run in 2 blocks, with each block containing the full 2<sup>3</sup> data points.
 
-Repetition was necessary to get an error estimate for the effects, since interactions between the effects were expected to be significant.
+Since the interactions between the effects were expected to be significant, I wanted to keep all 8 combinations of data points, which meant the repetition was necessary to get an error estimate for the effects.
 
 ### Exercise Selection
 
@@ -317,7 +316,7 @@ effects_se %>%
   ) +
   labs(
     title = "Normal quantile-quantile plot for the effects estimates",
-    subtitle = "res:reps and jump:rest:reps terms stand out as outliers",
+    subtitle = "rest:reps and jump:rest:reps terms stand out as outliers",
     y = "effects estimates on barspeed (seconds)",
     x = "theoretical normal quantiles"
   ) +
@@ -393,7 +392,7 @@ effects_se %>%
   ) +
   labs(
     title = "Normal quantile-quantile plot for the effects estimates",
-    subtitle = "res:reps and jump:rest:reps terms stand out as outliers",
+    subtitle = "rest:reps and jump:rest:reps terms stand out as outliers",
     y = "effects estimates on barspeed (seconds)",
     x = "theoretical normal quantiles"
   ) +
