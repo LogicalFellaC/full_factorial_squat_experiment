@@ -32,8 +32,6 @@ library(lazyeval)
 library(glue)
 ```
 
--   Adapted from the report submitted to Stanford University's STATS 363: Design of Experiments.
-
 Motivation / Background
 -----------------------
 
